@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
-  providers: [ButtonService],
 })
 export class ButtonComponent {
   selected = false;
@@ -18,7 +17,7 @@ export class ButtonComponent {
 
   onSelect() {
     console.log('onSelected');
-    this.selected = !this.selected;
+    this.selected = this.canBeSelecred();
     if (this.selected) {
       console.log('dentro do IF');
       switch (this.buttonService.selectionGroup) {
@@ -51,5 +50,11 @@ export class ButtonComponent {
         }
       }
     }
+  }
+
+  canBeSelecred(): boolean {
+    this.buttonService.buttonsSeleted++;
+    console.log('botoes Selecionados', this.buttonService.buttonsSeleted);
+    return this.buttonService.buttonsSeleted <= 4;
   }
 }

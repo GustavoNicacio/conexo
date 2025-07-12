@@ -5,5 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class ButtonService {
   selectionGroup = 'gp1';
+  buttonsSeleted = 0;
   constructor() {}
 }
