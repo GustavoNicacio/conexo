@@ -1,0 +1,36 @@
+.button {
+  padding: 4px;
+}
+
+.bloco {
+  width: 125px;
+  height: 90px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.default {
+  background-color: #1e293b;
+}
+
+.selected_g1 {
+  background-color: #009afe;
+}
+
+.selected_g2 {
+  background-color: #22c55e;
+}
+
+.selected_g3 {
+  background-color: #eab308;
+}
+
+.selected_g4 {
+  background-color: #b91c1c;
+}

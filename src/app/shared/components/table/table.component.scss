@@ -1,0 +1,13 @@
+.tabuleiro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #0f172a;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4px;
+}

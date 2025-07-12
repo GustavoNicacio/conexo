@@ -1,0 +1,18 @@
+footer {
+  color: white;
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+
+  .imagens {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    .imagem {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
